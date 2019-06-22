@@ -2,7 +2,7 @@
 """
 Spyder Editor
 
-Created on Sat Jun 22 13:25:35 2019
+Created on Sat Jun 22 15:25:35 2019
 
 @author: MuhammadAbuBakarAhsa
 """
@@ -54,7 +54,6 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
 
 KNN=KNeighborsClassifier(n_neighbors=3)
 # We are just specifying the alogrithm that we will be using 
-# n_neighbors = The value of K in KNN
 KNN.fit(X_train,Y_train)
 #this line we train 80% data of X_train and Y_train
 predictions=KNN.predict(X_test)
